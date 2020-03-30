@@ -1,0 +1,126 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 50px;
+}
+
+.textBox {
+  width: 65%;
+  text-align: left
+}
+
+.input_text {
+  border: 2px solid black;
+    padding: 4px;
+    background-color: aqua;
+}
+
+.checkBox {
+  display: inline-flex;
+  min-width: 15%;
+}
+
+.label {
+  font-size: 12px;
+}
+
+.content {
+  margin: 20px 50px;
+}
+
+.Box {
+  height: 180px;
+  width: 25%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular, .others {
+  text-align: left;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: flex-start;
+}
+
+.Box {
+  background-color: aqua;
+  margin: 10px 10px;
+  height: 130px;
+  width: 22%;
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    overflow-x: scroll;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .Box {
+    width: 29%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  
+  .header {
+    flex-direction: column;
+   justify-content: center;
+  }
+
+  .checkBox {
+    margin-top: 5px;
+      display: unset;
+      min-width: unset;
+    }
+
+  .textBox {
+    width: unset;
+    text-align: unset;
+  }
+
+  .popular, .others {
+    text-align: center;
+  }
+
+  .Box {
+    width: 44%;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .box-container {
+    justify-content: center;
+  }
+
+  .Box {
+    width: 50%;
+  }
+}
+
+.cityImage {
+  border-radius: 50%;
+  max-width: 65%;
+  height: 65%;
+  margin-top: 10px;
+}
+
+.cityName {
+  margin-top: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
